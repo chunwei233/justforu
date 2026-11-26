@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f2a4ce">
+<title>LOVE.exe · 小小饲养员</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0}body{min-height:100dvh;display:grid;place-items:center;background:radial-gradient(ellipse at top,#fff8fc,#e6d2de);font-family:system-ui,"Microsoft Yahei",sans-serif;color:#744d62;padding:20px 12px}button,input{font:inherit}button{cursor:pointer;touch-action:manipulation}.device{position:relative;width:min(390px,100%);padding:30px 24px 26px;border-radius:46% 46% 38% 38% / 17% 17% 13% 13%;background:linear-gradient(115deg,#ffbddc,#e93f94 24%,#f77dbb 49%,#b92573 86%,#f896ca);border:3px solid #ed8bb9;box-shadow:inset 5px 6px 12px #ffffff90,inset -6px -9px 13px #7e185c77,0 18px 32px #9d558450}.device:before{content:"";position:absolute;inset:10px;border:2px solid #ffffff50;border-radius:inherit;pointer-events:none}.brand{text-align:center;font-weight:900;letter-spacing:4px;color:#fff3f9;font-size:26px;text-shadow:0 2px 2px #ac386d}.sub{text-align:center;color:white;font-size:9px;letter-spacing:3px;margin:2px 0 17px}.bezel{background:#e5a0c6;padding:9px;border-radius:19px;box-shadow:0 4px 7px #84295677,inset 0 2px 4px #fff8}.screen{border:4px solid #51404d;background:#f7e8d9;border-radius:10px;overflow:hidden}.top{display:flex;justify-content:space-between;gap:5px;padding:9px 10px;font-size:11px}.top strong{max-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.room{position:relative;aspect-ratio:1.15;overflow:hidden;background:#eadbd2}.room svg{width:100%;height:100%;display:block;image-rendering:pixelated}.bubble{position:absolute;top:7%;left:5%;max-width:67%;background:#fff7e9;border:2px solid #b39a9e;border-radius:8px;padding:8px;font-size:12px;z-index:2}.bubble:after{content:"";position:absolute;left:70%;bottom:-7px;width:10px;height:10px;transform:rotate(45deg);border-right:2px solid #b39a9e;border-bottom:2px solid #b39a9e;background:#fff7e9}#cat{cursor:pointer;transform-origin:150px 165px;animation:breathe 2s steps(2) infinite}@keyframes breathe{50%{transform:translateY(-2px)}}#cat.happy{animation:hop .45s steps(5) 2}@keyframes hop{50%{transform:translateY(-12px)}}.night #sky{fill:#566083}.night #sun{fill:#f9e5b9}.night .room{filter:brightness(.76)}.stats{display:grid;gap:7px;padding:9px 11px}.stat{display:grid;grid-template-columns:36px 1fr 25px;align-items:center;gap:6px;font-size:11px}.track{height:8px;border-radius:5px;background:#dfc9c7;overflow:hidden}.fill{height:100%;background:#cb7b9f;transition:width .25s}.stat:nth-child(2) .fill{background:#9b9fbc}.stat:nth-child(3) .fill{background:#d5a16b}.actions{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin:17px 0 11px}.actions button{background:none;border:0;color:white;font-size:11px;padding:0}.orb{width:46px;height:46px;display:grid;place-items:center;margin:0 auto 5px;background:linear-gradient(#fff0fa,#e9a2ca);color:#995577;border-radius:50%;font-size:22px;box-shadow:0 4px 0 #b44882,inset 0 2px 3px #fff}.actions button:active .orb{transform:translateY(3px);box-shadow:0 1px 0 #b44882}.bottom{display:flex;justify-content:center;gap:14px;margin:12px 0 4px}.bottom button{background:#f6b5d5;color:#8b4569;border:1px solid #e29abd;border-radius:20px;padding:7px 15px;font-size:11px}.foot{text-align:center;font-size:9px;letter-spacing:2px;color:#fff;margin-top:13px}dialog{width:min(320px,90vw);border:2px solid #d4a1b8;border-radius:20px;background:#fff5f7;color:#744d62;padding:24px;text-align:center;box-shadow:0 15px 40px #5b284e55}dialog::backdrop{background:#50324988;backdrop-filter:blur(4px)}dialog input{width:100%;padding:12px;margin:10px 0;border:1px solid #d7a5bf;border-radius:9px;background:white}dialog button{background:#b95f8f;color:white;border:0;border-radius:9px;padding:10px 16px;margin:5px}dialog p{font-size:13px;line-height:1.8}.heart{position:absolute;top:47%;left:47%;font-size:27px;color:#d44a87;pointer-events:none;animation:float 1s forwards;z-index:4}@keyframes float{to{opacity:0;transform:translateY(-65px)}}@media(max-height:730px){body{padding:8px}.device{padding-top:18px;padding-bottom:15px}.sub{margin-bottom:9px}.actions{margin:10px 0}.bottom{margin-top:8px}}
+</style>
+</head>
+<body>
+<main class="device">
+<div class="brand">LOVE.exe</div><div class="sub">POCKET COMPANION · 01</div>
+<div class="bezel"><section class="screen" id="screen">
+<div class="top"><span id="day">DAY 001</span><strong id="petname">小黑猫</strong><span>♥ ♥ ♥</span></div>
+<div class="room" id="room"><div class="bubble" id="speech">你终于来啦。</div>
+<svg viewBox="0 0 300 260" shape-rendering="crispEdges" aria-label="小黑猫的像素房间">
+<rect width="300" height="260" fill="#eadbd2"/><path d="M20 0v190M50 0v190M80 0v190M110 0v190M140 0v190M170 0v190M200 0v190M230 0v190M260 0v190M290 0v190" stroke="#dfcbc7" stroke-width="2"/>
+<rect x="204" y="20" width="75" height="100" fill="#ae8589"/><rect id="sky" x="210" y="26" width="63" height="88" fill="#a9bfd1"/><circle id="sun" cx="253" cy="45" r="12" fill="#fff0ba"/><path d="M241 26v88M210 70h63" stroke="#d5b2ad" stroke-width="5"/>
+<rect y="187" width="300" height="73" fill="#c6a99c"/><path d="M0 205h300M0 224h300M0 245h300M40 187v18M100 205v19M220 224v21" stroke="#b7998e"/>
+<ellipse cx="151" cy="224" rx="88" ry="22" fill="#dcb9c8"/><ellipse cx="151" cy="224" rx="73" ry="16" fill="#e9cbd5"/>
+<rect x="20" y="151" width="36" height="38" fill="#a88480"/><rect x="16" y="145" width="44" height="9" fill="#c49c94"/><path d="M37 145v-37h-7v-9h-8v18h8v15h7m0 3h9v-18h9v-10h-9v8h-9" fill="#839c83"/>
+<g id="cat" role="button" tabindex="0" aria-label="抚摸小猫"><path d="M175 205h22v-9h10v-20h9v29h-12v10h-29" fill="#38333f"/><rect x="130" y="174" width="56" height="47" fill="#38333f"/><rect x="124" y="214" width="24" height="12" fill="#38333f"/><rect x="166" y="214" width="24" height="12" fill="#38333f"/><path d="M109 124h12v9h12v10h40v-10h12v-9h12v58h-88z" fill="#38333f"/><path d="M117 134h8v14h-8zm64 0h8v14h-8z" fill="#b87f99"/><g id="eyes" fill="#efcf8e"><rect x="124" y="154" width="14" height="14"/><rect x="168" y="154" width="14" height="14"/><path d="M130 154v10m44-10v10" stroke="#38333f" stroke-width="5"/></g><rect x="150" y="171" width="7" height="4" fill="#d99aae"/><path d="M147 178h13" stroke="#b38c9f" stroke-width="2"/></g>
+<g id="zzz" style="display:none" fill="#fff0bd" font-size="16"><text x="200" y="140">Z</text><text x="218" y="119">z</text></g></svg>
+</div><div class="stats" id="stats"></div></section></div>
+<div class="actions">
+<button data-act="feed"><span class="orb">♨</span>喂食</button>
+<button data-act="pet"><span class="orb">♡</span>抚摸</button>
+<button data-act="sleep"><span class="orb">☾</span><span id="sleepLabel">睡觉</span></button>
+<button data-act="mail"><span class="orb">✉</span>信箱</button>
+</div><div class="bottom"><button data-act="play">陪玩</button><button data-act="clean">清洁</button><button data-act="settings">设置</button></div>
+<div class="foot">MADE WITH LOVE ♡</div>
+</main>
+<dialog id="modal"></dialog>
+<script>
+const $=id=>document.getElementById(id),KEY='love-exe-v1';
+let s;
+try{s=JSON.parse(localStorage.getItem(KEY))}catch{}
+const clamp=n=>Math.max(0,Math.min(100,n));
+const fresh=name=>({name,born:Date.now(),last:Date.now(),food:80,mood:80,love:0,clean:100,sleep:false});
+function save(){try{localStorage.setItem(KEY,JSON.stringify(s))}catch{}}
+function tick(){if(!s)return;const hours=Math.max(0,(Date.now()-s.last)/3600000);s.food=clamp(s.food-hours*3);s.mood=clamp(s.mood-hours*(s.sleep?0:1));s.clean=clamp(s.clean-hours*2);s.last=Date.now();save()}
+function render(){if(!s)return;$('petname').textContent=s.name;$('day').textContent='DAY '+String(1+Math.floor((Date.now()-s.born)/86400000)).padStart(3,'0');$('stats').innerHTML=[['饱腹',s.food],['心情',s.mood],['爱意',s.love],['清洁',s.clean]].map(([name,value])=>`<div class="stat"><span>${name}</span><div class="track"><div class="fill" style="width:${clamp(value)}%"></div></div><span>${Math.round(value)}</span></div>`).join('');$('screen').classList.toggle('night',s.sleep||new Date().getHours()>=19||new Date().getHours()<6);$('zzz').style.display=s.sleep?'block':'none';$('eyes').style.opacity=s.sleep?0:1;$('sleepLabel').textContent=s.sleep?'起床':'睡觉'}
+function say(t){$('speech').textContent=t}
+function heart(){let node=document.createElement('span');node.className='heart';node.textContent='♥';$('room').append(node);setTimeout(()=>node.remove(),1000);$('cat').classList.remove('happy');void $('cat').getBoundingClientRect();$('cat').classList.add('happy')}
+function modal(html){$('modal').innerHTML=html;if(!$('modal').open)$('modal').showModal()}
+function close(){ $('modal').close() }
+function naming(){modal('<h2>初次见面 ♡</h2><p>有一只小猫正在等你。<br>给它取个名字吧。</p><form id="nameform"><input id="nameinput" maxlength="12" required placeholder="小猫的名字" autocomplete="off"><button>开始饲养</button></form>');$('nameform').onsubmit=e=>{e.preventDefault();const name=$('nameinput').value.trim();if(!name)return;s=fresh(name);save();render();close();say('以后请多关照！')}}
+function act(action){if(!s)return;tick();if(action==='settings'){modal('<h2>设置</h2><p>游戏进度保存在当前浏览器。</p><button id="rename">修改名字</button><button id="reset">重新开始</button><button id="close">返回</button>');$('close').onclick=close;$('rename').onclick=()=>{modal('<h2>修改名字</h2><form id="renameform"><input id="newname" maxlength="12" required><button>保存</button></form><button id="back">取消</button>');$('newname').value=s.name;$('back').onclick=close;$('renameform').onsubmit=e=>{e.preventDefault();const name=$('newname').value.trim();if(name){s.name=name;save();render();close()}}};$('reset').onclick=()=>{if(confirm('确定清空当前饲养进度？')){s=null;try{localStorage.removeItem(KEY)}catch{}naming()}};return}
+if(action==='mail'){modal('<h2>秘密信箱 ✉</h2><p>第一封信：<br>希望你打开这里的时候，<br>今天能比昨天开心一点。</p><p>'+(s.love>=30?'第二封信：谢谢你把一点点时间分给我。':'下一封信将在爱意达到 30 时解锁。')+'</p><button id="close">收好啦</button>');$('close').onclick=close;return}
+if(action==='sleep'){s.sleep=!s.sleep;say(s.sleep?'晚安，梦里见。':'早安！')}
+else if(s.sleep){say('呼……先让我睡一会儿。')}
+else{if(action==='feed'){s.food=clamp(s.food+20);s.love=clamp(s.love+2);say('好吃！还想和你一起吃。')}if(action==='pet'){s.mood=clamp(s.mood+8);s.love=clamp(s.love+5);say(['再摸一下嘛。','今天也好想你。','呼噜呼噜……'][Math.floor(Math.random()*3)])}if(action==='play'){s.mood=clamp(s.mood+18);s.food=clamp(s.food-5);s.love=clamp(s.love+3);say('和你玩最开心啦！')}if(action==='clean'){s.clean=100;say('房间变得香香的！')}heart()}
+save();render()}
+document.querySelectorAll('[data-act]').forEach(btn=>btn.onclick=()=>act(btn.dataset.act));
+$('cat').onclick=()=>act('pet');$('cat').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();act('pet')}};
+$('modal').addEventListener('cancel',e=>{if(!s)e.preventDefault()});
+if(s){tick();render();say('你回来啦。')}else naming();
+setInterval(()=>{if(s){tick();render()}},60000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&s){tick();render()}});
+</script>
+</body></html>
